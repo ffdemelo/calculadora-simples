@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/master.css">
+  <title>Calculadora Simples</title>
+</head>
+<body>
+  <div class="conteiner">
+    <div id="titulo">Calculadora Simples</div>
+    
+    <div id="janela-principal" class="fle-column-start">
+      <div id="entrada" class="flex-row-between">
+        <div class="center-full"><input id="numero1" type="text"></div>
+        <div id="sinal-operacao" class="center-full">+</div>
+        <div class="center-full"><input id="numero2" type="text"></div> 
+      </div>
+
+      <div id="botoes" class="flex-row-between">
+        <div id="somar" class="button-operacao center-full text-center">+</div>
+        <div id="subtrair" class="button-operacao center-full text-center">-</div>
+        <div  id="multiplicar" class="button-operacao center-full text-center">x</div>
+        <div id="dividir" class="button-operacao center-full text-center">/</div>  
+      </div>
+      <div id="calcular" class="center-full">
+        <div id="botao-calcular" class="button">Calcular</div>
+      </div>
+      <div id="separadorresultado"></div>
+      <div id="resultado">
+        <div class="text-center">Resultado</div>
+        <div id="campo-resultado" class="text-center">&NonBreakingSpace;</div>
+      </div>
+    </div> <!-- Fim de janela principal -->
+    
+    <!-- Janela de mensagens -->
+    <div id="janela-mensagem">
+      <div id="mensagem" class="center-full text-center"></div>
+      <div id="botao-ok" class="center-full"><div class="button">OK</div></div>
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
