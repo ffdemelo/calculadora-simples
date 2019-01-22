@@ -1,0 +1,19 @@
+.container {
+  background-color: #6974dd;
+}
+
+html, body {
+  color: white;
+}
+
+#titulo {
+  background-color: #da0000;  
+}
+
+#separadorresultado {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button:hover, .button-operacao:hover, #botoes div div:hover, #calcular div:hover, #botao-ok div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

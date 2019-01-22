@@ -1,11 +1,17 @@
+@import url('./color.css');
 /* Classes */
 
-.conteiner {
+.container {
   height: 100%;
-  width: 600px;
-  background-color: #35853a;
- 
+  width: 100%;
 }
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
 .center-full {
   display: flex;
   align-items: center;
@@ -31,8 +37,13 @@
 }
 
 .button {
+  display: block;
   padding: 10px;
   border-radius: 5px;
+}
+
+.button:active {
+  transform: translate(2px, 2px);
 }
 
 .button-operacao {
@@ -69,12 +80,12 @@ html, body {
 }
 
 #titulo {
-  height: 40px;
-  background-color: #2a682d;  
+  height: 40px;  
   display: flex;
   align-items: center;
   justify-content: center;
- }
+  font-weight: bold;
+}
 
 #entrada, #botoes {
   margin: 20px 10px 0;
@@ -101,8 +112,7 @@ html, body {
 }
 
 #separadorresultado {
-  height: 2px;
-  background-color: #41a247;
+  height: 3px;
 }
 
 
@@ -125,8 +135,5 @@ html, body {
 
 #entrada div input:focus {
   outline: 0;
- }
+}
 
-.button:hover, .button-operacao:hover, #botoes div div:hover, #calcular div:hover, #botao-ok div:hover {
-   background-color: #41a247; 
- }
